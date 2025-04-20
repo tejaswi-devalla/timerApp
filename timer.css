@@ -1,0 +1,76 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.timer-app {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#timer-display {
+  font-size: 60px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.buttons button,
+.modes button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.short-break-btn {
+  background-color: blue;
+  color: #fff;
+}
+.short-break-btn:hover {
+  background-color: rgb(89, 89, 243);
+  color: #fff;
+}
+.long-break-btn {
+  background-color: rgb(204, 58, 204);
+  color: #fff;
+}
+.long-break-btn:hover {
+  background-color: rgb(238, 88, 238);
+}
+
+#start-btn {
+  background-color: green;
+  color: white;
+}
+
+#start-btn:hover {
+  background-color: rgb(156, 226, 154);
+}
+#reset-btn {
+  background-color: grey;
+  color: white;
+}
+#reset-btn:hover {
+  background-color: rgb(187, 182, 182);
+}
+#stop-btn {
+  background-color: #d11d10;
+  color: white;
+}
+#stop-btn:hover {
+  background-color: rgb(245, 85, 85);
+}
+
+@media screen and (max-width: 344px) {
+  .timer-app {
+    margin: 50px;
+  }
+}

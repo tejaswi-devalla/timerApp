@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="timer.css" />
+  </head>
+  <body>
+    <div class="timer-app">
+      <h1 class="s">Promodoro Timer</h1>
+      <div id="timer-display">25:00</div>
+      <audio
+        id="timer-sound"
+        src="https://www.soundjay.com/buttons/sounds/beep-05.mp3"
+        preload="auto"
+      ></audio>
+
+      <div class="buttons">
+        <button id="start-btn">Start</button>
+        <button id="stop-btn">Stop</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+
+      <div class="modes">
+        <button class="mode-btn short-break-btn" data-time="300">
+          Short Break
+        </button>
+        <button class="mode-btn long-break-btn" data-time="900">
+          Long Break
+        </button>
+      </div>
+    </div>
+
+    <script src="timer.js"></script>
+  </body>
+</html>
